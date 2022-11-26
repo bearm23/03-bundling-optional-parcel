@@ -1,0 +1,30 @@
+@use "reset";
+@use "animations";
+
+body {
+    font-family: 'Montserrat';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+
+    h1 {
+        font-size: 2em;
+        width: 390px;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        animation: typing 2s steps(22), effect .5s step-end infinite alternate;
+    }
+}
+
+img {
+    width: 200px;
+}
